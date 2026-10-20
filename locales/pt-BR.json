@@ -1,0 +1,43 @@
+{
+  "navigation": {
+    "movies": "Descobrir filmes",
+    "tv": "Descobrir séries",
+    "requests": "Meus pedidos"
+  },
+  "discover": {
+    "popular": "Populares",
+    "trending": "Em alta",
+    "upcoming": "Em breve",
+    "recentlyAdded": "Adicionados recentemente",
+    "genres": "Gêneros",
+    "studios": "Estúdios",
+    "networks": "Emissoras e plataformas",
+    "providers": "Onde assistir",
+    "noResults": "Nenhum título encontrado",
+    "loadMore": "Carregar mais"
+  },
+  "filters": {
+    "country": "País de origem",
+    "year": "Ano",
+    "genre": "Gênero",
+    "platform": "Plataforma",
+    "originalLanguage": "Idioma original",
+    "audioLanguage": "Idioma do áudio",
+    "subtitleLanguage": "Idioma da legenda",
+    "dubbed": "Dublado",
+    "subtitled": "Legendado",
+    "unknown": "Não informado",
+    "apply": "Aplicar filtros",
+    "clear": "Limpar filtros"
+  },
+  "requests": {
+    "request": "Solicitar",
+    "requested": "Solicitado",
+    "available": "Disponível na biblioteca",
+    "approve": "Aprovar",
+    "decline": "Recusar",
+    "quality": "Qualidade",
+    "season": "Temporada",
+    "episode": "Episódio"
+  }
+}
