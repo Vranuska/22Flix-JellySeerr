@@ -1,0 +1,17 @@
+{
+  "category": "General",
+  "changelog": "Fix blank Home, Favorites, Movies, TV, Requests and Calendar pages after leaving JellySpot Spotify Browse. Clear Spotify page-wide hiding before the tab guard blocks cleanup, restore the selected panel visibility, and preserve Spotify-owned activation.",
+  "description": "Movies, TV, and Requests tabs for Seerr. You choose which quality profiles people can pick.",
+  "guid": "8f3a2c91-4e7b-4d6a-9c18-2b5e0f7a6d44",
+  "name": "JellySeerr",
+  "overview": "Browse Seerr and send requests from Jellyfin, with admin control over quality profiles.",
+  "owner": "ThuGie",
+  "targetAbi": "10.11.0.0",
+  "timestamp": "2026-09-20T00:00:00.0000000Z",
+  "version": "1.0.29.0",
+  "status": "Active",
+  "autoUpdate": true,
+  "assemblies": [
+    "Jellyfin.Plugin.JellySeerr.dll"
+  ]
+}

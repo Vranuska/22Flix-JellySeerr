@@ -1,0 +1,21 @@
+name: Validate translations
+on:
+  push:
+    paths:
+      - "locales/**"
+      - "tools/validate_locale.py"
+      - ".github/workflows/validate-locales.yml"
+  pull_request:
+    paths:
+      - "locales/**"
+      - "tools/validate_locale.py"
+      - ".github/workflows/validate-locales.yml"
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python tools/validate_locale.py
