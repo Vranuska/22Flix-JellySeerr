@@ -1,0 +1,283 @@
+[
+  {
+    "guid": "8f3a2c91-4e7b-4d6a-9c18-2b5e0f7a6d44",
+    "name": "JellySeerr",
+    "description": "Movies, TV, and Requests tabs for Seerr. You choose which quality profiles people can pick.",
+    "overview": "Browse Seerr and send requests from Jellyfin, with admin control over quality profiles.",
+    "owner": "ThuGie",
+    "category": "General",
+    "imageUrl": "https://raw.githubusercontent.com/ThuGie/JellySeerr/main/thumb.png",
+    "versions": [
+      {
+        "version": "1.0.29.0",
+        "changelog": "Fix blank Home, Favorites, Movies, TV, Requests and Calendar pages after leaving JellySpot Spotify Browse. Clear Spotify page-wide hiding before the tab guard blocks cleanup, restore the selected panel visibility, and preserve Spotify-owned activation.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.29.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "4B15926D6B159B9749B72CB7B128A050",
+        "timestamp": "2026-10-26T21:38:58.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.28.0",
+        "changelog": "Fix Movies/TV tabs becoming stuck after switching away during loading. Retain results for hidden tabs, distinguish native loading placeholders from loaded content, and refresh carousel layout when returning to a populated tab.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.28.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "F4379D4D1733239739CED7D7609A471F",
+        "timestamp": "2026-10-26T21:34:12.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.27.0",
+        "changelog": "Add Approve and Decline buttons directly to pending request cards in the Requests tab for Seerr managers. Prevent duplicate submissions, refresh after approval or decline, show action errors, and preserve keyboard navigation.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.27.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "B1836AD0AA3BF1DEC6A3B2B53D937B78",
+        "timestamp": "2026-10-25T20:50:39.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.26.0",
+        "changelog": "Fix Agenda showing episodes from adjacent months. Limit agenda entries to the selected month using local air dates, including correct month/year boundaries and empty states; retain adjacent days in the month grid.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.26.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "02C981F676D4D2A7FCE2201D333F4801",
+        "timestamp": "2026-10-25T13:14:01.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.25.0",
+        "changelog": "Remove the duplicate Release calendar text tab from the home navigation. Keep the top-header calendar icon opening the dedicated page, including bookmarked navigation.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.25.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "82790A03B91DEEB441A95D255BE84B8E",
+        "timestamp": "2026-10-24T22:23:39.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.24.0",
+        "changelog": "Make the selected calendar month and year prominent in a large centered heading directly above the schedule, with adjacent month navigation. Remove the Sonarr instance selector and server labels from the calendar interface.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.24.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "65188F8E8187C36C0D647FBBC3E0B1CF",
+        "timestamp": "2026-10-24T21:51:01.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.23.0",
+        "changelog": "Add a dedicated monitored Sonarr release calendar page with a top-header calendar icon, month and agenda views, local air times, instance and title filters, available-file markers and series awaiting an air date. Include monitored titles regardless of requester, preserve 4K permissions, and cache/shared-load instance data with partial failure reporting.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.23.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "1B7F68A208307921F85E02AAA84FEE7D",
+        "timestamp": "2026-10-24T21:40:15.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.22.0",
+        "changelog": "Fix hidden release-search errors by reading Jellyfin Fetch responses. Run release searches and downloads as bounded, user-scoped background operations with status polling, support 15-minute indexer searches, show failing Sonarr/Radarr operation and HTTP status, and prevent duplicate grabs on retries.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.22.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "CA2921416CF74D4AA8CFAF05C6B83106",
+        "timestamp": "2026-10-24T18:42:09.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.21.0",
+        "changelog": "Add the personal release calendar, Seerr notification preferences, categorized episode issue reporting and comments, persistent replacement history, release comparison, and scoped failed/stalled download recovery with specific-release blocklisting. Preserve whole-season permissions and add backend and interface coverage.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.21.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "A79E0C647A805E2219E39799FFB182DB",
+        "timestamp": "2026-10-24T18:19:51.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.20.0",
+        "changelog": "Add Episodes & status and movie Download status with clear request, queue and import explanations. Show per-season episode availability with direct release/replacement actions. Add Find missing episodes for selected aired, monitored, missing and unqueued episodes, with fresh checks, ownership enforcement and repeat-search protection. Add availability and missing-search tests.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.20.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "FC3A2F28F15B8EB583FB00176E3ECFCE",
+        "timestamp": "2026-10-24T18:03:16.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.19.0",
+        "changelog": "Improve loading across discovery, details, requests and season downloads: defer image downloads, share duplicate fetches, reuse HTTP connections, batch image-cache writes, return browser cache headers, load relevant Arr progress in parallel, scope and bound caches, and stop stale modal responses. Keep release safety checks fresh and add loading regression tests.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.19.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "ED9BE145B69F81D04D13FC9C6A3A2115",
+        "timestamp": "2026-10-24T17:49:18.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.18.0",
+        "changelog": "Add Replace whole season to Advanced download, including seasons requested by other users without admin approval. Show affected episodes and existing file counts before confirmation; require packs mapped to the whole selected season, preserve other seasons and enforce profile restrictions. Deduplicate old files and release blocklisting; add season replacement tests.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.18.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "4783C115557CDCAAA30B2893E628E8D7",
+        "timestamp": "2026-10-24T17:34:06.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.17.0",
+        "changelog": "Add Advanced download: requesters can choose movie or episode releases and replace bad files without admin approval, optionally blocklisting only the old release. Show quality, size, indexer, seeders and rejection reasons; enforce ownership, approved seasons and profile restrictions. Add backend and picker tests to CI and release builds.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.17.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "858BE572814DF54124AFF9CDB79F67B1",
+        "timestamp": "2026-10-24T17:25:18.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.16.0",
+        "changelog": "Dual-layout tabs: Movies, TV, and Requests work on legacy headerTabs and experimental AppBar when the native tab strip is hidden.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.16.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "B4581CDF613FF5010EDCC024F6AB96FE",
+        "timestamp": "2026-10-12T20:56:17.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.15.0",
+        "changelog": "Fix request create crash from duplicate MediaType/mediaType JSON property names under System.Text.Json.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.15.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "9673C1713D1876FB6200DF63ABEDD92A",
+        "timestamp": "2026-09-20T20:40:13.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.14.0",
+        "changelog": "Requests tab defaults to All for managers; Mine/All styled like the status filter tabs.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.14.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "21655BCB19546BDB5B4C6E918414573C",
+        "timestamp": "2026-09-14T02:43:26.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.13.0",
+        "changelog": "Fix Requests tab HTTP 401 when legacy auth headers are disabled (use ApiClient.ajax).",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.13.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "9EEF363125207810A8829DF6F81F06D1",
+        "timestamp": "2026-09-14T02:31:29.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.12.0",
+        "changelog": "Restore Home tab bar setup after coexistence fix; still leave other plugins’ tabs alone.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.12.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "9BE9772E1654BB8B1DE5FEE61FB69604",
+        "timestamp": "2026-09-08T09:31:56.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.11.0",
+        "changelog": "Stop removing other plugins’ Home tabs (e.g. JellySpot); only clean up JellySeerr leftovers.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.11.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "604E5006AE96489A2FDDE9BD87C8102A",
+        "timestamp": "2026-09-08T00:56:49.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.10.0",
+        "changelog": "Fix Users tab crash on Jellyfin 10.11.9+ (IUserManager.GetUsers), and stop progress text opening Radarr; split status onto two lines.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.10.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "7C2975632DA487BB06D76FAC1921C09F",
+        "timestamp": "2026-09-08T00:11:45.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.9.0",
+        "changelog": "Fix issue reporting, cancel stubs, Requests user linking, and Arr deep-link gating; harden Sonarr TMDB lookup; add Seerr/Arr API docs.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.9.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "C8A968475680717FEDB2647CE0DD9766",
+        "timestamp": "2026-09-07T08:56:21.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.8.0",
+        "changelog": "Fix changing request quality (Seerr needs mediaType), and show SD / 720p / 1080p / 2K / 4K instead of a generic HD label.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.8.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "97A30306255C2561D690B4E23D7E1598",
+        "timestamp": "2026-09-07T08:14:00.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.7.0",
+        "changelog": "Fill Watchlist, Seerr, Report issue, and Unmonitor with real colors, and check Radarr/Sonarr in settings when they are filled in.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.7.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "A08054347DDA3C59D13BDD3B14A15951",
+        "timestamp": "2026-09-07T07:40:17.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.6.0",
+        "changelog": "Give Watchlist, Open in Seerr, Report issue, and Unmonitor a visible outline so they still read as buttons.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.6.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "0D170471DC87E2D8F28B9D3615C9A267",
+        "timestamp": "2026-09-07T07:07:55.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.5.0",
+        "changelog": "Play only opens the matching library title, request actions stay with the requester or an admin, and the current request is shown on the details page.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.5.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "7308DD1D1836C34151833831566BA66A",
+        "timestamp": "2026-09-07T07:00:39.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.4.0",
+        "changelog": "After cancel, titles can be requested again, cancel also unmonitors, and request cards show when nothing has downloaded yet.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.4.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "A64219EF42EDBA59BA4F78C074886C85",
+        "timestamp": "2026-09-07T06:42:36.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.3.0",
+        "changelog": "Keep Movies, TV, and Requests on the home tab bar after back navigation.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.3.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "874AE34534F91C9A235C81A87819A9B0",
+        "timestamp": "2026-09-07T05:54:05.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.2.0",
+        "changelog": "Hide Seerr and *arr links from remote users. Request and discover cards now show play, status, quota, and season state.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.2.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "3E5E0A769415A399B13A543E8831F954",
+        "timestamp": "2026-09-07T05:46:07.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.1.0",
+        "changelog": "Open a request for cancel/watchlist/approve, group the settings page, show download sizes in KB/MB/GB, and refresh the Requests tab once a minute by default.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.1.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "7DC0C9669D61743C7333ADFCEEC530C9",
+        "timestamp": "2026-09-07T04:34:48.0000000Z",
+        "dependencies": []
+      },
+      {
+        "version": "1.0.0.0",
+        "changelog": "Release 1.0.0.0.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThuGie/JellySeerr/releases/download/v1.0.0.0/Jellyfin.Plugin.JellySeerr_10.11.0.zip",
+        "checksum": "4F56BDACFEA86BA0704A55517B53D4BE",
+        "timestamp": "2026-09-07T02:27:41.0000000Z",
+        "dependencies": []
+      }
+    ]
+  }
+]
