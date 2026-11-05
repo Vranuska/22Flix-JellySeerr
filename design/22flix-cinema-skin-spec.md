@@ -111,3 +111,53 @@ The interface must feel cinematic, fluid, quiet, and immediately understandable 
 - Every screen is navigable without a mouse.
 - Typography and focus remain clearly visible from a sofa.
 - Existing Jellyfin/Seerr automation and download services remain untouched.
+
+
+## Profiles and avatar gallery
+
+### Profile picker
+- Add a dedicated, cinematic profile-selection screen inspired by familiar streaming-service profile pickers, while retaining original 22Flix layout and artwork.
+- Show large, clearly focused avatar tiles with profile names and an obvious "Adicionar perfil" tile.
+- Support TV remote navigation (D-pad, OK, Back) with visible focus and no hover-only actions.
+- Profile switching must be simple from TV and must not require uploading files or using an on-screen file browser.
+
+### Built-in default avatars
+- Ship a curated default avatar gallery with the skin. It must work offline and be immediately available on first launch.
+- Include varied original illustrated portraits: women and men, different ages, appearances, fantasy, sci-fi, animals, friendly/kids-safe designs, and expressive personalities.
+- Use a consistent square portrait format, strong silhouette, readable face at small sizes, distinct background color, and consistent art direction.
+- Keep default avatars organized into clear categories and accessible with a TV remote.
+
+### Installable avatar packs
+- Add an in-skin "Pacotes de avatares" catalogue. The user chooses "Adicionar pacote" and browses available collections without leaving the application.
+- Present each pack as a horizontal collection/row, using the associated film/series title or an approved artwork/logo as the collection identity, followed by its available character avatars. This follows the supplied Behance reference's organization: work/series identity + a row of character portraits.
+- Pack examples may be organized by title/franchise (e.g. fantasy, science fiction, comedy, horror, animation), with both female and male characters represented where appropriate.
+- Packs are optional, independently installable, updateable, removable, and must never overwrite the built-in gallery or a user's selected avatar. Existing profile assignments must fall back safely if a pack is removed.
+- Include pack metadata: pack name, collection title, creator/source, version, license/usage terms, thumbnail, avatar count, and compatibility.
+- Use original artwork or assets the pack publisher is authorized to distribute. Do not bundle unlicensed film/series logos, promotional images, actor likenesses, or copyrighted character art without permission. Where rights are unavailable, allow user-imported personal packs and original inspired-by-but-not-confusingly-identical artwork, clearly labeled.
+- Provide a local pack import/install flow for administrators, with validation of manifest, image dimensions, file types, file sizes, and safe filenames. Do not execute code from avatar packs.
+
+### Custom avatars
+- Allow a user to upload a personal avatar through desktop or mobile settings, or allow an administrator to import it.
+- Do not require or expose file upload through the TV remote. On TV, users only browse and select avatars already installed or synced.
+- After upload, show crop/preview and allow a display name for the custom avatar; preserve the profile's own name separately from the avatar label.
+- Support common safe image formats (PNG, JPEG, WebP), square crop, size limits, and server-side validation. Store custom uploads separately from built-in and pack assets.
+- A profile can choose a built-in avatar, an installed pack avatar, or a custom uploaded avatar.
+
+## Family profiles and Kids mode
+
+- Support separate profiles with independent watch progress, history, favorites/list, preferences, and recommendations, using actual supported Jellyfin user accounts or another securely isolated server-side identity model.
+- Provide an explicit Kids profile type and a visually distinct, child-friendly home experience.
+- Kids content eligibility must be enforced server-side, not merely hidden in the UI. Search, direct item routes, recommendations, related titles, playback, and API responses must all respect the child's allowed content.
+- Apply configurable age/content ratings using trustworthy metadata. Items with missing, unknown, or untrusted ratings must be excluded by default from Kids profiles unless a guardian explicitly approves them.
+- Protect profile switching, leaving Kids mode, changing restrictions, and guardian settings with a PIN or equivalent server-verified adult authentication.
+- Allow guardians to set an age/rating ceiling and explicitly allow/block titles where supported.
+- Do not claim screen-time limits or parental controls unless the backend enforces them reliably.
+- Never rely on a client-only PIN, hidden navigation item, CSS filter, or frontend-only catalogue filter as a security boundary.
+
+### Profile acceptance criteria
+- A new installation includes usable default avatars without downloads.
+- A user can install an optional avatar pack from within the skin and see it as a labeled collection row.
+- A user can upload and name a custom avatar from desktop/mobile; the avatar appears on TV after sync.
+- TV users can select any installed avatar using only the remote.
+- Profiles do not mix personal playback state or lists when the server supports isolated identities.
+- Kids profiles cannot retrieve or play disallowed titles through search, direct URLs, recommendations, or API calls.
