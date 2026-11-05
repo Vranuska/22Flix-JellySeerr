@@ -4,9 +4,9 @@
 
 **Skin name:** 22Flix Cinema  
 **Product:** 22Flix  
-**Design direction:** a faithful, high-quality streaming experience inspired by the information hierarchy and interaction patterns of Netflix, with original 22Flix branding and assets. Do not copy Netflix logos, proprietary artwork, or exact branded assets.
+**Design direction:** a high-quality streaming experience inspired by Netflix's information hierarchy and interaction patterns, with original 22Flix branding and assets. Do not copy Netflix logos, proprietary artwork, or exact branded assets.
 
-The interface must feel cinematic, fluid, quiet, and immediately understandable from a sofa. Accessibility at viewing distance is a first-class requirement, not an optional afterthought.
+The interface must feel cinematic, fluid, quiet, and immediately understandable from a sofa. Accessibility at viewing distance is a first-class requirement.
 
 ## Visual system
 
@@ -21,15 +21,19 @@ The interface must feel cinematic, fluid, quiet, and immediately understandable 
 
 1. Persistent top navigation with 22Flix mark, Início, Filmes, Séries, Minha lista, and a prominent search action.
 2. Large cinematic hero banner (approximately 45–55% of the first viewport height on TV), with backdrop, gradient scrim, title, concise synopsis, metadata, and clear actions: Assistir, Mais informações, and Minha lista.
-3. Horizontal content rails with large poster cards:
+3. **Destaques:** a prominent curated showcase near the top. It should feel like a streaming-service premiere carousel: large cinematic backdrop/poster, strong title typography, short synopsis, optional restrained tags (Novo, Em alta, Estreia) only when supported by real metadata, and obvious Assistir / Mais informações actions. Allow remote users to move between featured titles with left/right navigation and clear position indicators. Auto-rotation, if used, must be slow, subtle, pausable, and disabled when reduced motion is enabled.
+4. **Top 10 — Filmes:** a dedicated horizontal rail with oversized ranking numerals (1–10) partially behind or beside large posters, evoking the recognizable streaming Top 10 treatment. Numerals must remain legible and not obscure artwork or titles. Each card opens the real detail page.
+5. **Top 10 — Séries:** a separate ranked rail using the same visual language, not mixed with films.
+6. Additional horizontal content rails with large poster cards:
    - Continue assistindo
    - Minha lista
-   - Populares
-   - Em alta
+   - Em alta agora
    - Adicionados recentemente
-   - Recomendações
-4. Keep rail headings large and visually distinct. Cards must have consistent aspect ratios and clear selected/focused states.
-5. Continue-watching cards show progress only when reliable playback progress is available.
+   - Recomendados para você
+   - Mais populares por gênero, when useful
+7. Keep rail headings large and visually distinct. Cards must have consistent aspect ratios and clear selected/focused states.
+8. Continue-watching cards show progress only when reliable playback progress is available.
+9. **Ranking integrity:** never invent popularity or viewing counts. Prefer real Jellyfin play statistics when available, or a configured and clearly identified metadata/trending provider. If no trustworthy ranking source is available, label the row accurately (for example, “Destaques do 22Flix” or “Mais recentes”) instead of presenting a fabricated Top 10. Define the ranking period/source in the UI where practical.
 
 ## Core screens and behavior
 
@@ -37,7 +41,7 @@ The interface must feel cinematic, fluid, quiet, and immediately understandable 
 - Search available from every main screen.
 - Large, high-contrast search field and on-screen keyboard support.
 - Results grouped or filterable by Filmes and Séries.
-- Search must query the existing Jellyfin/Seerr capabilities; do not create a fake local catalogue.
+- Search must query existing Jellyfin/Seerr capabilities; do not create a fake local catalogue.
 - Empty, loading, offline, and no-results states must be designed.
 
 ### Favorites / Minha lista
@@ -93,13 +97,14 @@ The interface must feel cinematic, fluid, quiet, and immediately understandable 
 1. Identify the exact frontend/plugin source, upstream version, build process, and current Seerr/Jellyfin integration points.
 2. Create a separate feature branch and a visual prototype of the home screen.
 3. Implement shared design tokens, typography, navigation, focus handling, and reusable poster/hero components.
-4. Wire search, favorites/watchlist, details, and playback/request actions to the real backend.
+4. Wire featured content, trustworthy Top 10 ranking sources, search, favorites/watchlist, details, and playback/request actions to the real backend.
 5. Test keyboard, mouse, touch, and Android TV remote navigation; verify no regressions in existing services.
 6. Package and deploy only after a successful build and a reversible test.
 
 ## Acceptance criteria
 
-- The home screen has a cinematic hero and clearly separated horizontal rails.
+- The home screen has a cinematic featured showcase and clearly separated horizontal rails.
+- Separate Top 10 films and Top 10 series rails use real, explainable ranking data.
 - Search returns real catalogue results.
 - Minha lista persists and correctly adds/removes items.
 - Details and playback/request actions work against the existing services.
