@@ -2,6 +2,12 @@
 
 Projeto de personalização e extensão da experiência Jellyfin + Seerr para um servidor doméstico 22Flix.
 
+## Skin
+
+A identidade visual planejada para a interface é **22Flix Cinema**: uma experiência cinematográfica inspirada na organização visual de serviços de streaming como a Netflix, com identidade própria, foco em Android/Google TV, navegação por controle remoto e tipografia acessível à distância.
+
+Especificação visual e funcional: [design/22flix-cinema-skin-spec.md](design/22flix-cinema-skin-spec.md).
+
 ## Objetivos
 
 1. Traduzir a interface JellySeerr para português brasileiro.
@@ -20,7 +26,7 @@ Projeto de personalização e extensão da experiência Jellyfin + Seerr para um
 
 ## Estado
 
-Planejamento inicial. Nenhum plugin modificado ou instalado neste repositório ainda.
+Planejamento inicial. A especificação da skin 22Flix Cinema foi registrada em `design/22flix-cinema-skin-spec.md`. Ainda não há código-fonte da interface neste repositório; a implementação depende de identificar a fonte real do frontend/plugin e seu processo de build.
 
 ## Próxima etapa
 
